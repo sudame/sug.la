@@ -1,0 +1,36 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  font-family: "DM Mono", monospace;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  text-align: center;
+  font-size: 5rem;
+}
+
+.sudame {
+  text-decoration: dashed;
+  position: relative;
+}
+
+.sudame::before {
+  display: block;
+  content: "";
+  border: 5px solid black;
+  border-left: none;
+  border-right: none;
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  height: 0.1em;
+}
